@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomKotlin</string>
+    <string name="text_name">Eyepetizer</string>
+    <string name="text_content">Daily appetizers for your eyes，Bon eyepetit</string>
+</resources>
