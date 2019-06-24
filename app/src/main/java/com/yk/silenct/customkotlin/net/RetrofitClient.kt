@@ -39,7 +39,7 @@ class RetrofitClient private constructor(context: Context, baseUrl: String) {
         }
         try {
             if (cache == null) {
-                cache = Cache(httpCatchDirectroy, 10 * 1024 * 1024)
+                cache = Cache(httpCatchDirectroy!!, 10 * 1024 * 1024)
             }
         } catch (e: Exception) {
             Log.e("OKHttp", "Could not create http cache", e)
@@ -57,7 +57,7 @@ class RetrofitClient private constructor(context: Context, baseUrl: String) {
 
         //retrofit创建
         retrofit = Retrofit.Builder()
-                .client(okHttpClient)
+                .client(okHttpClient!!)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(baseUrl)

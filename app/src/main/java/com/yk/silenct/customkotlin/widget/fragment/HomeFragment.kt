@@ -11,4 +11,5 @@ class HomeFragment : BaseFragment() {
 
     override fun initView() {
     }
+
 }

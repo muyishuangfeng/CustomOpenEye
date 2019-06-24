@@ -1,7 +1,7 @@
 package com.yk.silenct.customkotlin.base
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,19 +9,19 @@ import android.view.ViewGroup
 /**
  * BaseFragment
  */
-abstract class BaseFragment : Fragment() {
+abstract class BaseFragment : androidx.fragment.app.Fragment() {
     var isFirst: Boolean = false
     var rootView: View? = null
     var isFragmentVisiable: Boolean = false
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (rootView == null) {
-            rootView = inflater?.inflate(getLayoutID(), container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        if (rootView==null){
+            rootView = inflater.inflate(getLayoutID(), container, false)
         }
         return rootView
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initView()
     }
@@ -47,7 +47,7 @@ abstract class BaseFragment : Fragment() {
 
     }
 
-    open protected fun onFragmentVisiableChange(b: Boolean){
+    open protected fun onFragmentVisiableChange(b: Boolean) {
 
     }
 

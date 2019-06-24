@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import java.util.*
 import kotlin.collections.HashMap
 
+@Suppress("NAME_SHADOWING")
 class SPUtils private constructor(context: Context, spName: String) {
 
     private val sp: SharedPreferences
@@ -31,7 +32,7 @@ class SPUtils private constructor(context: Context, spName: String) {
      * @return 存在返回对应值，不存在返回默认值`defaultValue`
      */
     @JvmOverloads
-    fun getString(key: String, defaultValue: String = ""): String {
+    fun getString(key: String, defaultValue: String = ""): String? {
         return sp.getString(key, defaultValue)
     }
 
@@ -143,7 +144,7 @@ class SPUtils private constructor(context: Context, spName: String) {
      * @return 存在返回对应值，不存在返回默认值`defaultValue`
      */
     @JvmOverloads
-    fun getStringSet(key: String, defaultValue: Set<String> = Collections.emptySet()): Set<String> {
+    fun getStringSet(key: String, defaultValue: Set<String> = Collections.emptySet()): Set<String>? {
         return sp.getStringSet(key, defaultValue)
     }
 

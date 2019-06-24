@@ -11,4 +11,5 @@ class RankFragment : BaseFragment() {
 
     override fun initView() {
     }
+
 }
