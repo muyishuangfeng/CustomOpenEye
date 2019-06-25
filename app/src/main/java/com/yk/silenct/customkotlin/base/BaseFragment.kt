@@ -1,5 +1,7 @@
 package com.yk.silenct.customkotlin.base
 
+import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,9 +15,15 @@ abstract class BaseFragment : androidx.fragment.app.Fragment() {
     var isFirst: Boolean = false
     var rootView: View? = null
     var isFragmentVisiable: Boolean = false
+    var mActivity: Activity? = null
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        mActivity == context
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (rootView==null){
+        if (rootView == null) {
             rootView = inflater.inflate(getLayoutID(), container, false)
         }
         return rootView
