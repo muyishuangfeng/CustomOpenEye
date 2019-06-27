@@ -8,4 +8,14 @@
     <string name="text_home">首页</string>
     <string name="text_find">发现</string>
     <string name="text_test">测试</string>
+    <string name="text_title">标题</string>
+    <string name="text_time">时间</string>
+    <string name="text_video_desc">视频描述</string>
+    <string name="text_collect">收藏</string>
+    <string name="text_share">分享</string>
+    <string name="text_comment">评论</string>
+    <string name="text_cache">缓存</string>
+    <string name="text_already_catch">该视频已经缓存过了</string>
+    <string name="text_start_download">开始下载</string>
+    <string name="text_add_task_failed">添加任务失败</string>
 </resources>
