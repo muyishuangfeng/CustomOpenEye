@@ -53,4 +53,6 @@ dependencies {
     implementation 'com.shuyu:GSYVideoPlayer:2.1.1'
     //rxdownload
     implementation 'zlc.season:rxdownload2:2.0.4'
+    //屏幕适配
+    implementation 'me.jessyan:autosize:0.9.1'
 }

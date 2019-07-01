@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+#屏幕适配
+-keep class me.jessyan.autosize.** { *; }
+-keep interface me.jessyan.autosize.** { *; }
