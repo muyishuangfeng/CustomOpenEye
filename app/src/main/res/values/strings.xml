@@ -18,4 +18,5 @@
     <string name="text_already_catch">该视频已经缓存过了</string>
     <string name="text_start_download">开始下载</string>
     <string name="text_add_task_failed">添加任务失败</string>
+    <string name="text_default">默认数据</string>
 </resources>

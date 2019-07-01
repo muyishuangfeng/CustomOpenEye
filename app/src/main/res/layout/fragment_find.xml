@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv_find"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/text_find"/>
+        android:layout_height="match_parent" />
 </RelativeLayout>

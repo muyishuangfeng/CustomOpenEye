@@ -28,7 +28,8 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".widget.activity.VideoDetailActivity"></activity>
+        <activity android:name=".widget.activity.VideoDetailActivity" />
+        <activity android:name=".widget.activity.FindDetailActivity"></activity>
     </application>
 
 </manifest>
