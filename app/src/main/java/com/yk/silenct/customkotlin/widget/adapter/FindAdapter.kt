@@ -36,8 +36,10 @@ class FindAdapter(context: Context, list: MutableList<FindBean>) : RecyclerView.
     }
 
     override fun onBindViewHolder(holder: FindViewHolder, position: Int) {
-        holder.mTxtTitle.text = mList?.get(position)?.name
-        ImageLoadUtils.display(mContext!!, holder.mImgPicture, mList?.get(position)?.bgPicture!!)
+        holder.itemView.tv_item_title.text=mList?.get(position)?.name
+        //holder.mTxtTitle.text = mList?.get(position)?.name
+        //ImageLoadUtils.display(mContext!!, holder.mImgPicture, mList?.get(position)?.bgPicture!!)
+        ImageLoadUtils.display(mContext!!, holder.itemView.iv_item_photo, mList?.get(position)?.bgPicture!!)
         if (mListener != null) {
             holder.itemView.setOnClickListener {
                 mListener!!.onItemClick(holder.itemView, position)
@@ -49,8 +51,8 @@ class FindAdapter(context: Context, list: MutableList<FindBean>) : RecyclerView.
      * viewHolder
      */
     class FindViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
-        var mTxtTitle: TextView = itemView?.findViewById(R.id.tv_item_title) as TextView
-        var mImgPicture: AppCompatImageView = itemView?.findViewById(R.id.iv_item_photo) as AppCompatImageView
+        //var mTxtTitle: TextView = itemView?.findViewById(R.id.tv_item_title) as TextView
+        //var mImgPicture: AppCompatImageView = itemView?.findViewById(R.id.iv_item_photo) as AppCompatImageView
     }
 
     /**
