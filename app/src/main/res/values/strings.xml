@@ -19,4 +19,9 @@
     <string name="text_start_download">开始下载</string>
     <string name="text_add_task_failed">添加任务失败</string>
     <string name="text_default">默认数据</string>
+    <string name="text_commit">点击登录即可发表评论</string>
+    <string name="text_mine_cache">我的缓存</string>
+    <string name="text_watch_record">观看记录</string>
+    <string name="text_feedback">意见反馈</string>
+    <string name="text_no_content">暂无内容</string>
 </resources>

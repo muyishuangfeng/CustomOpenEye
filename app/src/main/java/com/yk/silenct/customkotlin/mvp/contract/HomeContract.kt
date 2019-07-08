@@ -2,20 +2,15 @@ package com.yk.silenct.customkotlin.mvp.contract
 
 import com.yk.silenct.customkotlin.base.BasePresenter
 import com.yk.silenct.customkotlin.base.BaseView
-import com.yk.silenct.customkotlin.mvp.model.bean.HotBean
+import com.yk.silenct.customkotlin.mvp.model.bean.HomeBean
 
-interface HotContract {
-    /**
-     * 设置数据
-     */
+interface HomeContract {
+
     interface View : BaseView<Presenter> {
-        fun setData(bean: HotBean)
+        fun setData(bean:HomeBean)
     }
 
-    /**
-     * 请求数据
-     */
     interface Presenter : BasePresenter {
-        fun requestData(strategy: String)
+        fun requestData()
     }
 }

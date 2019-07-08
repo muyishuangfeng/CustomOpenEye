@@ -11,7 +11,6 @@ import android.text.TextUtils
 import android.view.View
 import android.view.Window
 import android.widget.ImageView
-import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
